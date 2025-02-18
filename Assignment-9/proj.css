@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd;
+    color: #283593;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #283593;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.service {
+    text-align: center;
+}
+
+
+button {
+    padding: 12px 20px;
+    background-color: #283593;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #1a237e;
+    transform: translateY(-2px);
+}
+
+
+.appointments {
+    margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #283593;
+    color: white;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #283593;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #00acc1;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+button[type="submit"]:hover {
+    background-color: #00838f;
+}
+
+
+.close-btn {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.close-btn:hover {
+    background-color: #b71c1c;
+}
+
+
+.confirmation-popup {
+    display: none;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+input[type="tel"] {
+    -moz-appearance: textfield;
+}
+
+input[type="tel"]::-webkit-outer-spin-button,
+input[type="tel"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#searchInput, #statusFilter {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Action Buttons */
+button.action-btn, 
+button.cancel-btn, 
+button.update-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+
+button.action-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+button.action-btn:hover {
+    background-color: #fb8c00;
+}
+
+button.cancel-btn {
+    background-color: #d32f2f;
+    color: white;
+}
+
+button.cancel-btn:hover {
+    background-color: #b71c1c;
+}
+
+button.update-btn {
+    background-color: #388e3c;
+    color: white;
+}
+
+button.update-btn:hover {
+    background-color: #1b5e20;
+}      
